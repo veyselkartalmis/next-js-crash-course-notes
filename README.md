@@ -69,4 +69,4 @@ yazarak layout'u oluşturuyoruz. Tek yapmamız gereken kullanmak istediğimiz co
 ```
 import styles from "./layout.module.css";
 ```
-şeklinde import edip herhangi bir nesnenin içerisinde classname={styles.layoutPage} şeklinde çağırabiliriz. CSS dosyamızda farklı class'lar da olabilir onları yine aynı şekilde classname={styles.className} şeklinde kullanabiliriz 
+şeklinde import edip herhangi bir nesnenin içerisinde <b>classname={styles.layoutPage}</b> şeklinde çağırabiliriz. CSS dosyamızda farklı class'lar da olabilir onları yine aynı şekilde <b>classname={styles.className}</b> şeklinde kullanabiliriz 
