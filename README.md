@@ -69,4 +69,16 @@ yazarak layout'u oluşturuyoruz. Tek yapmamız gereken kullanmak istediğimiz co
 ```
 import styles from "./layout.module.css";
 ```
-şeklinde import edip herhangi bir nesnenin içerisinde <b>classname={styles.layoutPage}</b> şeklinde çağırabiliriz. CSS dosyamızda farklı class'lar da olabilir onları yine aynı şekilde <b>classname={styles.className}</b> şeklinde kullanabiliriz 
+şeklinde import edip herhangi bir nesnenin içerisinde <b>classname={styles.layoutPage}</b> şeklinde çağırabiliriz. CSS dosyamızda farklı class'lar da olabilir onları yine aynı şekilde <b>classname={styles.className}</b> şeklinde kullanabiliriz.
+
+## Global Styles:
+Global olarak kullanacağımız bir CSS dosyası için öncelikle pages klasörü altına _app.js adında bir dosya oluşturarak aşağıdaki kodları ekliyoruz;
+```
+import "../public/styles/global.css";  //Global CSS dosyamız
+
+export default function App({ Component, pageProps }) {
+    return <Component {...pageProps} />
+}
+```
+daha sonra public içerisine styles adında klasör oluşturup içerisine global.css dosyamızı ekliyoruz ve CSS kodlarımı yazıyoruz. <br>
+💡 _app.js eklendikten sonra değişiklikleri görebilmek için projeyi terminalde CTRL+C basarak kapatıp <b>npm run dev</b> komutuyla tekrardan başlatmak gerekiyor.
