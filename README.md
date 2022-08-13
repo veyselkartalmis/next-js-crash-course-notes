@@ -10,11 +10,11 @@ npx create-next-app my-blog
 npx run dev
 ```
 
-## Next.js' de router yapısı: 
+## Next.js' de Router Yapısı: 
 Herhangi bir paket kurmaya gerek kalmadan pages klasörü içerisinde bulunan sayfa adlarına rahatlıkla ulaşabiliyoruz. Örneğin page altında example.jsx dosyamız var ise http://localhost:3000/example yazarak kolaylıkla ulaşabiliriz. <br> <br>
 💡 pages klasörü altına başka bir klasör açarakta farklı bir route yapısına yönlendirebiliriz. blog adında bir klasör açıp post.jsx dosyamızı eklersek http://localhost:3000/blog/post yönlendirmesiyle ulaşabiliriz. blog klasörünün içerisinde içeriğimiz var ise içerisine index.jsx dosyamızı ekleyip http://localhost:3000/blog şeklinde ulaşabiliriz.
 
-## Link Yönlendirmek 
+## Link Yönlendirmek:
 ```
 import Link from "next/link";
 ```
@@ -22,3 +22,9 @@ import Link from "next/link";
 ```
 <Link href="/about">About</Link>
 ```
+
+## Image Component: 
+```
+import Image from "next/image";
+```
+şeklinde Image componenti import ederek kullanabiliriz. İçerisine width ve height ayarlarını eklemek gerekiyor. Normal img tag'ı kullanarakta resim ekleyebiliriz fakat bu component bize daha optimize ve responsive resimler eklememize olanak sağlıyor.
