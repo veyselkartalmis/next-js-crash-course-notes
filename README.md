@@ -28,3 +28,15 @@ import Link from "next/link";
 import Image from "next/image";
 ```
 şeklinde Image componenti import ederek kullanabiliriz. İçerisine width ve height ayarlarını eklemek gerekiyor. Normal img tag'ı kullanarakta resim ekleyebiliriz fakat bu component bize daha optimize ve responsive resimler eklememize olanak sağlıyor.
+
+## Metadata:
+```
+import Head from "next/head";
+```
+şeklinde Head componentini import ediyoruz.
+```
+<Head>
+    <title>About Page</title>
+</Head>
+```
+bu şekilde her sayfanın title kısmını değiştirebiliriz.
