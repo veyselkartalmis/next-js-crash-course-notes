@@ -1,8 +1,9 @@
 import Head from "next/head";
+import Layout from "../.next/components/layout";
 
 export default function About() {
     return (
-        <div>
+        <Layout>
             <Head>
                 <title>About Page</title>
             </Head>
@@ -11,6 +12,6 @@ export default function About() {
             <style jsx>{`
                 h1 {font-size: 20px; font-weight: 500; color: orangered;}
             `}</style>
-        </div>
+        </Layout>
     )
 }

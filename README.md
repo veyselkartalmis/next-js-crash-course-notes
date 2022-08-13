@@ -41,11 +41,32 @@ import Head from "next/head";
 ```
 bu şekilde her sayfanın title kısmını değiştirebiliriz.
 
-## CSS in JS
+## CSS in JS:
 Herhangi bir component içerisinde o sayfada css kodları yazmak istiyorsak.
 ```
 <style jsx>{`
     h1 {font-size: 20px; font-weight: 500; color: orangered;}
 `}</style>
 ```
-yapısını kullanrak css kodlarımı ekleyebiliriz.
+yapısını kullanrak css kodlarını ekleyebiliriz.
+
+## Layout Component:
+Herhangi bir component içerisinde hazır olan bir yapıyı çağırıp kullanmamıza yarar. Kullanmak için öncelikle .next klasörünün içerisine component adında bir klasör oluşturup layout.jsx dosyamızı ekliyoruz.
+```
+export default function Layout({ children }) {
+    return (
+        <div className="layout-page">
+            {children}
+
+            <style jsx>{`
+                .layout-page {background: lime}
+            `}</style>
+        </div>
+    )
+}
+```
+yazarak layout'u oluşturuyoruz. Tek yapmamız gereken kullanmak istediğimiz component'e import ederek Layout ile sarmalamak. Eğer CSS kodlarını jsx olarak yazmak istemiyorsanız layout.module.css dosyasını aynı dizin içerisine oluşturup kodlarımızı yazabiliriz. Daha sonra layout.jsx içerisine 
+```
+import styles from "./layout.module.css";
+```
+şeklinde import edip herhangi bir nesnenin içerisinde classname={styles.layoutPage} şeklinde çağırabiliriz. CSS dosyamızda farklı class'lar da olabilir onları yine aynı şekilde classname={styles.className} şeklinde kullanabiliriz 
