@@ -15,3 +15,9 @@ export default function Home() {
     </div>
   )
 }
+
+export async function getStaticProps() {
+  const response =
+    await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=fddd67769c4fdd6647c452e8a8b30070&language=en-US&page=1`);
+  
+}
