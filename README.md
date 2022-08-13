@@ -40,3 +40,12 @@ import Head from "next/head";
 </Head>
 ```
 bu şekilde her sayfanın title kısmını değiştirebiliriz.
+
+## CSS in JS
+Herhangi bir component içerisinde o sayfada css kodları yazmak istiyorsak.
+```
+<style jsx>{`
+    h1 {font-size: 20px; font-weight: 500; color: orangered;}
+`}</style>
+```
+yapısını kullanrak css kodlarımı ekleyebiliriz.
