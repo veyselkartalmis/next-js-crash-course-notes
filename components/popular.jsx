@@ -30,6 +30,8 @@ export default function Popular({ movies }) {
                 width: 100%;
                 color: #fff;
             }
+
+            img {width: 100%}
         `}</style>
     </div>
     )
