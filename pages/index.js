@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Link from "next/link";
 import Image from "next/image";
+import Popular from '../components/popular';
 
 export default function Home({ movies }) {
   return (
@@ -10,8 +11,9 @@ export default function Home({ movies }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h3>HOMEPAGE</h3>
-      <Image src="/image/example.jpg" width="600" height="300" />
+      <h3>POPULAR MOVIES</h3>
+
+      <Popular movies={movies} />
     </div>
   )
 }
