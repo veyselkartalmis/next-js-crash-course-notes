@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Link from "next/link";
 import Image from "next/image";
 
-export default function Home() {
+export default function Home({ movies }) {
   return (
     <div className="container">
       <Head>
@@ -16,8 +16,14 @@ export default function Home() {
   )
 }
 
-/* export async function getStaticProps() {
-  const response =
+export async function getStaticProps() {
+  const request =
     await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=fddd67769c4fdd6647c452e8a8b30070&language=en-US&page=1`);
-  
-} */
+  const movies = await request.json();
+  return {
+    props: {
+      movies
+    }
+  }
+
+} 

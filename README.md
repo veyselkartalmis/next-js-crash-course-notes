@@ -82,3 +82,4 @@ export default function App({ Component, pageProps }) {
 ```
 daha sonra public içerisine styles adında klasör oluşturup içerisine global.css dosyamızı ekliyoruz ve CSS kodlarımı yazıyoruz. <br><br>
 💡 _app.js eklendikten sonra değişiklikleri görebilmek için projeyi terminalde CTRL+C basarak kapatıp <b>npm run dev</b> komutuyla tekrardan başlatmak gerekiyor.
+
