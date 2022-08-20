@@ -83,3 +83,6 @@ export default function App({ Component, pageProps }) {
 daha sonra public içerisine styles adında klasör oluşturup içerisine global.css dosyamızı ekliyoruz ve CSS kodlarımı yazıyoruz. <br><br>
 💡 _app.js eklendikten sonra değişiklikleri görebilmek için projeyi terminalde CTRL+C basarak kapatıp <b>npm run dev</b> komutuyla tekrardan başlatmak gerekiyor.
 
+## Router
+Örnek olarak apiden çektiğimiz filmleri listeledik ve bunların detay sayfalarına movie/$id şeklinde bir parametre göndermemiz gerekiyor. Bunun için pages klasörü altına movie adında bir klasör oluşturup içerisine [url].js dosyamızı ekleyerek gerekli kodları yazıp yönlendirme işlemini yapabiliriz. .routuer.query metoduyla gönderilen id'yi yakalayıp gerekli detay listelemesini sağlayabiliriz.
+
